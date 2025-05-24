@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Allerup Gamle Have</title>
+  <meta name="description" content="Oplev det grønne friluftsbad og aktiviteter i Allerup Gamle Have.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <img src="https://allerupgamlehave.dk/static/aghcms/images/topphoto4.jpg" alt="Panorama billede af haven">
+    <div class="hero-content">
+      <img class="logo" src="https://allerupgamlehave.dk/static/aghcms/images/new_logo.png" alt="Allerup Gamle Have logo">
+      <h1>Velkommen til Allerup Gamle Have</h1>
+      <p>Nyd naturen, friluftsbadet og de mange aktiviteter.</p>
+    </div>
+    <button class="hamburger" id="menuToggle" aria-label="Åbn menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="mainNav">
+      <a href="index.html" class="active">Forside</a>
+      <a href="Åbningstider.html">Åbningstider</a>
+      <a href="Faciliteter.html">Faciliteter</a>
+      <a href="Udlejning.html">Udlejning</a>
+      <a href="Foreningen.html">Foreningen</a>
+    </nav>
+    <div class="nav-overlay" id="navOverlay"></div>
+  </header>
+  <main>
+    <section class="section card">
+      <h2>Friluftsbadet</h2>
+      <img src="https://allerupgamlehave.dk/media/filer_public_thumbnails/filer_public/56/33/563342e0-221e-4d9a-8a69-7c72f591966b/20190724_134027.jpg__400x247_q85_subsampling-2.jpg" alt="Friluftsbadet i Allerup">
+      <p>Friluftsbadet er hjertet i haven. Her kan du bade, slappe af og nyde sommeren på bedste vis.</p>
+    </section>
+    <section class="section card">
+      <h2>Historien</h2>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzA66sgW_-39H_yx2eq2rGYpLhdmFOkVNh7A&s" alt="Gammelt billede af Allerup Gamle Have">
+      <p>Haven har i generationer været et rekreativt åndehul for hele familien. Den gamle have er stadig et grønt samlingspunkt.</p>
+    </section>
+  </main>
+  <footer>
+    <div>&copy; Allerup Gamle Have 2024</div>
+  </footer>
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const mainNav = document.getElementById('mainNav');
+    const navOverlay = document.getElementById('navOverlay');
+    menuToggle.addEventListener('click', function() {
+      mainNav.classList.toggle('open');
+      navOverlay.classList.toggle('show');
+      menuToggle.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', mainNav.classList.contains('open'));
+    });
+    navOverlay.addEventListener('click', function() {
+      mainNav.classList.remove('open');
+      navOverlay.classList.remove('show');
+      menuToggle.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+    });
+  </script>
+</body>
+</html>
