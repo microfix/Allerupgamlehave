@@ -3,15 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <title>Allerup Gamle Have</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="description" content="Oplev det grønne friluftsbad og aktiviteter i Allerup Gamle Have.">
+  <meta name="author" content="Dannisgaard webdesign, lars@dannisgaard.dk">
+  <meta name="designer" content="Dannisgaard webdesign">
+  <meta name="reply-to" content="lars@dannisgaard.dk">
+  <meta name="owner" content="Allerup Gamle Have">
+  <title>Allerup Gamle Have – Danmarks smukkeste friluftsbad</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-  <header class="hero">
-    <img src="https://allerupgamlehave.dk/static/aghcms/images/topphoto4.jpg" alt="Panorama billede af haven">
-    <div class="hero-content">
-      <img class="logo" src="https://allerupgamlehave.dk/static/aghcms/images/new_logo.png" alt="Allerup Gamle Have logo">
+  <!-- Header med panorama og logo -->
+  <header class="hero" style="overflow:hidden; max-height:320px; position:relative;">
+    <img src="https://allerupgamlehave.dk/static/aghcms/images/topphoto6.jpg" alt="Panorama billede af Allerup Gamle Have" style="width:100%; object-fit:cover; min-height:180px;">
+    <div class="hero-content" style="position:absolute; top:1.5rem; left:1.5rem; z-index:10;">
+      <a href="/">
+        <img class="logo" src="https://allerupgamlehave.dk/static/aghcms/images/new_logo.png" alt="Allerup Gamle Have logo" style="max-width:160px; width:90%; height:auto;">
+      </a>
       <h1>Velkommen til Allerup Gamle Have</h1>
       <p>Nyd naturen, friluftsbadet og de mange aktiviteter.</p>
     </div>
@@ -20,28 +29,42 @@
     </button>
     <nav id="mainNav">
       <a href="index.html" class="active">Forside</a>
-      <a href="Åbningstider.html">Åbningstider</a>
+      <a href="Åbningstider.html">Åbningstider</a>
       <a href="Faciliteter.html">Faciliteter</a>
       <a href="Udlejning.html">Udlejning</a>
-      <a href="Foreningen.html">Foreningen</a>
+      <a href="Kontakt.html">Kontakt</a>
     </nav>
     <div class="nav-overlay" id="navOverlay"></div>
   </header>
+
+  <!-- Hovedindhold -->
   <main>
-    <section class="section card">
+    <section class="section card" style="margin-top:2rem;">
       <h2>Friluftsbadet</h2>
       <img src="https://allerupgamlehave.dk/media/filer_public_thumbnails/filer_public/56/33/563342e0-221e-4d9a-8a69-7c72f591966b/20190724_134027.jpg__400x247_q85_subsampling-2.jpg" alt="Friluftsbadet i Allerup">
       <p>Friluftsbadet er hjertet i haven. Her kan du bade, slappe af og nyde sommeren på bedste vis.</p>
     </section>
+
     <section class="section card">
       <h2>Historien</h2>
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzA66sgW_-39H_yx2eq2rGYpLhdmFOkVNh7A&s" alt="Gammelt billede af Allerup Gamle Have">
       <p>Haven har i generationer været et rekreativt åndehul for hele familien. Den gamle have er stadig et grønt samlingspunkt.</p>
     </section>
   </main>
-  <footer>
-    <div>&copy; Allerup Gamle Have 2024</div>
+
+  <footer style="margin-top:2rem; background:var(--footer-bg); color:var(--footer-text); padding:2rem 0 1rem;">
+    <div style="display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:2rem; max-width:900px; margin:0 auto;">
+      <div style="flex:2; min-width:220px;">
+        <div style="font-size:1.2em; font-weight:bold;">Allerup Gamle Have</div>
+        <div style="margin-top:1rem; font-size:0.95em;">&copy; Allerup Gamle Have 2024</div>
+        <div style="margin-top:0.5rem;">Kontakt: <a href="mailto:lars@dannisgaard.dk" style="color:var(--accent);">lars@dannisgaard.dk</a></div>
+      </div>
+      <div style="flex:1; min-width:180px; text-align:center;">
+        <img src="https://allerupgamlehave.dk/static/aghcms/images/new_logo.png" alt="Allerup Gamle Have logo" style="max-width:160px; width:80%; height:auto; margin:0 auto;">
+      </div>
+    </div>
   </footer>
+
   <script>
     const menuToggle = document.getElementById('menuToggle');
     const mainNav = document.getElementById('mainNav');
