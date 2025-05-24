@@ -1,0 +1,159 @@
+
+
+<!DOCTYPE html>
+<!-- <html lang="da"> -->
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="Brug Allerup gamle Haves forlystelser i åbningstiden fra maj til september">
+    <meta name="author" content="Dannisgaard webdesign, lars@dannisgaard.dk">
+    <meta name='designer' content='Dannisgaard webdesign'>
+    <meta name='reply-to' content='lars@dannisgaard.dk'>
+    <meta name='owner' content='Allerup Gamle Have'>
+    <title>Åbningstider</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+
+    <style>
+        @font-face {
+            font-family: 'oswaldlight';
+            src: url("/static/aghcms/fonts/Oswald-Light-webfont.eot");
+            src: url("/static/aghcms/fonts/Oswald-Light-webfont.eot%3F%23iefix") format('embedded-opentype'),
+            url("/static/aghcms/fonts/Oswald-Light-webfont.woff2") format('woff2'),
+            url("/static/aghcms/fonts/Oswald-Light-webfont.woff") format('woff'),
+            url("/static/aghcms/fonts/Oswald-Light-webfont.ttf") format('truetype'),
+            url("/static/aghcms/fonts/Oswald-Light-webfont.svg%23oswaldlight") format('svg');
+            font-weight: normal;
+            font-style: normal;
+
+        }
+    </style>
+</head>
+
+<body>
+<header>
+  <div style="overflow:hidden; max-height: 320px;">
+    <img src="https://allerupgamlehave.dk/static/aghcms/images/topphoto6.jpg" alt="Panorama billede af Allerup Gamle Have" style="width:100%; object-fit:cover; min-height:180px;">
+  </div>
+  <button class="hamburger" id="menuToggle" aria-label="Åbn menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <nav id="mainNav">
+    <a href="/faciliteter/">Faciliteter</a>
+    <a href="/faciliteter/friluftsbad/">Friluftsbad</a>
+    <a href="/faciliteter/telt/">Telt</a>
+    <a href="/faciliteter/abningstider/" class="active">Åbningstider</a>
+    <a href="/faciliteter/aktivitetsbaner/">Aktivitetsbaner</a>
+    <a href="/faciliteter/cafeen/">Caféen</a>
+    <a href="/info/">Info</a>
+    <a href="/info/priser/">Priser</a>
+    <a href="/info/arrangementer/">Arrangementer</a>
+    <a href="/udlejning/">Udlejning</a>
+    <a href="/foreningen/">Foreningen</a>
+    <a href="/kontakt/">Kontakt</a>
+  </nav>
+  <div id="navOverlay"></div>
+</header>
+
+<div style="display:flex; justify-content:center; margin:2rem 0;">
+  <a href="/">
+    <img src="https://allerupgamlehave.dk/static/aghcms/images/new_logo.png" width="180" alt="Allerup Gamle Have logo" style="max-width:180px; height:auto;">
+  </a>
+</div>
+
+<nav aria-label="brødkrumme" style="margin-bottom:2rem;">
+  <ol class="breadcrumb" style="display:flex; flex-wrap:wrap; list-style:none; gap:0.5rem; padding:0; background:none;">
+    <li><a href="/">Forside</a> &raquo;</li>
+    <li><a href="/faciliteter/">Faciliteter</a> &raquo;</li>
+    <li><span class="active">Åbningstider</span></li>
+  </ol>
+</nav>
+
+<main>
+  <h1>Åbningstider 2025</h1>
+  <section class="section card">
+    <p><strong>Velkommen til en ny sæson i Allerup Gamle Have!</strong></p>
+    <p><strong>Bassinet holder åbent fra lørdag d. 24. maj til søndag d. 17. august – hver dag.</strong><br>Skoler kan desuden aftale ekstra åbning i perioden 18.–24. august.</p>
+
+    <h2>Uden for skolernes sommerferie</h2>
+    <ul>
+      <li><b>Hverdage:</b> kl. 14.00–19.00</li>
+      <li><b>Weekender:</b> kl. 12.00–19.00</li>
+    </ul>
+
+    <h2>I skolernes sommerferie</h2>
+    <ul>
+      <li><b>Uge 27–30 + 32:</b> Alle dage kl. 10.00–19.00</li>
+      <li><b>Uge 31:</b> Hverdage kl. 12.30–19.00 (grundet svømmeskole)</li>
+    </ul>
+
+    <div class="card" style="background:var(--background); margin:1.5rem 0;">
+      <b>Vigtigt:</b> Badende kaldes op af vandet 15 minutter før lukketid.<br>
+      Ved dårligt vejr og ingen gæster kan bassinet lukkes tidligere – hold øje med hjemmesiden eller Facebook for opdateringer.
+    </div>
+
+    <p style="color:var(--accent); font-weight:bold; margin-top:1.5rem;"><u>Badning uden for de officielle åbningstider er ikke tilladt og kan medføre politianmeldelse.</u></p>
+
+    <p>Ekstra åbning kan bookes under <b>Udlejning &rarr; Udvidet åbningstid</b>.</p>
+
+    <h2>Haven er altid åben!</h2>
+    <p>Selve området Allerup Gamle Have er åbent for alle – også uden for badets åbningstid.<br>
+    Brug haven med omtanke og respekt for naturen og andre gæster.</p>
+  </section>
+</main>
+
+<footer>
+  <div style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:2rem; max-width:900px; margin:0 auto;">
+    <div style="flex:1; min-width:220px;">
+      <h3 style="margin-bottom:0.5rem;">Allerup Gamle Have</h3>
+      <div>Klappen 1<br>5220 Odense SØ</div>
+      <div>Telefon: 6595 8069</div>
+      <div>Mobil udlejning: 3118 3352</div>
+      <div>E-mail: <a href="mailto:info@allerupgamlehave.dk" style="color:var(--footer-text);text-decoration:underline;">info@allerupgamlehave.dk</a></div>
+      <div style="margin-top:1rem; font-size:0.95em;">&copy; Allerup Gamle Have 2024</div>
+    </div>
+    <div style="flex:1; min-width:180px; text-align:center;">
+      <img src="https://allerupgamlehave.dk/static/aghcms/images/new_logo.png" alt="Nostalgisk logo" style="max-width:160px; width:80%; height:auto; margin:0 auto;">
+    </div>
+  </div>
+</footer>
+
+<script>
+// Hamburger menu logic
+const menuToggle = document.getElementById('menuToggle');
+const mainNav = document.getElementById('mainNav');
+const navOverlay = document.getElementById('navOverlay');
+
+function openMenu() {
+  mainNav.classList.add('open');
+  navOverlay.classList.add('show');
+  menuToggle.classList.add('open');
+  menuToggle.setAttribute('aria-expanded', 'true');
+}
+function closeMenu() {
+  mainNav.classList.remove('open');
+  navOverlay.classList.remove('show');
+  menuToggle.classList.remove('open');
+  menuToggle.setAttribute('aria-expanded', 'false');
+}
+menuToggle.addEventListener('click', function() {
+  if (mainNav.classList.contains('open')) {
+    closeMenu();
+  } else {
+    openMenu();
+  }
+});
+navOverlay.addEventListener('click', closeMenu);
+window.addEventListener('resize', function() {
+  if(window.innerWidth > 900) closeMenu();
+});
+</script>
+
+</body>
+
+</html>

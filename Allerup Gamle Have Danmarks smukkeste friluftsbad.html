@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="Danmarks smukkeste friluftsbad og have – se åbningstider, faciliteter og kontaktinfo.">
+  <meta name="author" content="Dannisgaard webdesign, lars@dannisgaard.dk">
+  <meta name="designer" content="Dannisgaard webdesign">
+  <meta name="reply-to" content="lars@dannisgaard.dk">
+  <meta name="owner" content="Allerup Gamle Have">
+  <base href="/">
+  <title>Allerup Gamle Have – Danmarks smukkeste friluftsbad</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <!-- Header med panorama og logo -->
+  <header style="overflow:hidden; max-height: 320px;">
+    <img src="https://allerupgamlehave.dk/static/aghcms/images/topphoto6.jpg" alt="Panorama billede af Allerup Gamle Have" style="width:100%; object-fit:cover; min-height:180px;">
+    <div style="position:absolute; top:1.5rem; left:1.5rem; z-index:10;">
+      <a href="/">
+        <img src="https://allerupgamlehave.dk/static/aghcms/images/new_logo.png" alt="Allerup Gamle Have logo" style="max-width:160px; width:90%; height:auto;">
+      </a>
+    </div>
+    <button class="hamburger" id="menuToggle" aria-label="Åbn menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="mainNav">
+      <a href="/">Forside</a>
+      <a href="Åbningstider.html">Åbningstider</a>
+      <a href="#">Faciliteter</a>
+      <a href="#">Udlejning</a>
+      <a href="#">Kontakt</a>
+    </nav>
+    <div class="nav-overlay" id="navOverlay"></div>
+  </header>
+
+  <!-- Hovedindhold, bevar ALT tekst og info -->
+  <main>
+    <section class="section card" style="margin-top:2rem;">
+      <h1>Allerup Gamle Have – Danmarks smukkeste friluftsbad</h1>
+      <p>Velkommen til Allerup Gamle Have – et unikt friluftsbad og naturskønt område for hele familien.</p>
+      <!-- Billedgalleri fra carousel bevares som statiske billeder -->
+      <div class="gallery" style="display:flex; gap:1rem; flex-wrap:wrap; justify-content:center; margin:2rem 0;">
+        <img src="assets/images/topphoto.png" alt="Allerup Gamle Have bassin" style="max-width:320px; width:100%; border-radius:8px;">
+        <img src="assets/images/topphoto2.png" alt="Panorama billede af Allerup Gamle Have" style="max-width:320px; width:100%; border-radius:8px;">
+        <img src="assets/images/topphoto3.png" alt="Allerup Gamle Have bassin" style="max-width:320px; width:100%; border-radius:8px;">
+      </div>
+      <p>Her på siden finder du alle oplysninger om åbningstider, faciliteter, udlejning og kontaktmuligheder.</p>
+      <p>Kontakt: <a href="mailto:lars@dannisgaard.dk">lars@dannisgaard.dk</a></p>
+      <p>Design & udvikling: Dannisgaard webdesign</p>
+    </section>
+  </main>
+
+  <footer style="margin-top:2rem; background:var(--footer-bg); color:var(--footer-text); padding:2rem 0 1rem 0;">
+    <div style="display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:2rem; max-width:900px; margin:0 auto;">
+      <div style="flex:2; min-width:220px;">
+        <div style="font-size:1.2em; font-weight:bold;">Allerup Gamle Have</div>
+        <div style="margin-top:1rem; font-size:0.95em;">&copy; Allerup Gamle Have 2024</div>
+        <div style="margin-top:0.5rem;">Kontakt: <a href="mailto:lars@dannisgaard.dk" style="color:var(--accent);">lars@dannisgaard.dk</a></div>
+      </div>
+      <div style="flex:1; min-width:180px; text-align:center;">
+        <img src="https://allerupgamlehave.dk/static/aghcms/images/new_logo.png" alt="Nostalgisk logo" style="max-width:160px; width:80%; height:auto; margin:0 auto;">
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Hamburger menu script (samme som på de andre sider)
+    const menuToggle = document.getElementById('menuToggle');
+    const mainNav = document.getElementById('mainNav');
+    const navOverlay = document.getElementById('navOverlay');
+    menuToggle.addEventListener('click', function() {
+      mainNav.classList.toggle('open');
+      navOverlay.classList.toggle('show');
+      menuToggle.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', mainNav.classList.contains('open'));
+    });
+    navOverlay.addEventListener('click', function() {
+      mainNav.classList.remove('open');
+      navOverlay.classList.remove('show');
+      menuToggle.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+    });
+  </script>
+</body>
+</html>
