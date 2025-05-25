@@ -1,13 +1,13 @@
 /* Allerup Gamle Have - Modern Responsive Styles */
 :root {
-  --primary: #537D5D;
-  --secondary: #73946B;
-  --accent: #9EBC8A;
-  --background: #D2D0A0;
+  --primary: #356859;
+  --secondary: #4C8C63;
+  --accent: #A1C68E;
+  --background: #E6E9D8;
   --text: #222;
-  --header-bg: #537D5D;
+  --header-bg: #356859;
   --header-text: #fff;
-  --footer-bg: #537D5D;
+  --footer-bg: #356859;
   --footer-text: #fff;
   --border-radius: 12px;
   --shadow: 0 2px 16px rgba(0,0,0,0.08);
@@ -405,4 +405,32 @@ footer {
   box-shadow: var(--shadow);
   padding: 1.5rem;
   margin-bottom: 1.5rem;
+}
+
+/* Hero section styles */
+.hero {
+  position: relative;
+  overflow: hidden;
+  max-height: 360px;
+}
+.hero img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  min-height: 200px;
+}
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: rgba(0, 0, 0, 0.45);
+  color: var(--header-text);
+  padding: 1rem 2rem;
+  border-radius: var(--border-radius);
+}
+.hero-content .logo {
+  max-width: 200px;
+  margin: 0 auto 1rem auto;
 }

@@ -2,58 +2,57 @@
 <html lang="da">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="description" content="Danmarks smukkeste friluftsbad og have – se åbningstider, faciliteter og kontaktinfo.">
+  <meta name="description" content="Oplev det grønne friluftsbad og aktiviteter i Allerup Gamle Have.">
   <meta name="author" content="Dannisgaard webdesign, lars@dannisgaard.dk">
   <meta name="designer" content="Dannisgaard webdesign">
   <meta name="reply-to" content="lars@dannisgaard.dk">
   <meta name="owner" content="Allerup Gamle Have">
-  <base href="/">
   <title>Allerup Gamle Have – Danmarks smukkeste friluftsbad</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
   <!-- Header med panorama og logo -->
-  <header style="overflow:hidden; max-height: 320px;">
+  <header class="hero" style="overflow:hidden; max-height:320px; position:relative;">
     <img src="https://allerupgamlehave.dk/static/aghcms/images/topphoto6.jpg" alt="Panorama billede af Allerup Gamle Have" style="width:100%; object-fit:cover; min-height:180px;">
-    <div style="position:absolute; top:1.5rem; left:1.5rem; z-index:10;">
+    <div class="hero-content" style="position:absolute; top:1.5rem; left:1.5rem; z-index:10;">
       <a href="/">
-        <img src="https://allerupgamlehave.dk/static/aghcms/images/new_logo.png" alt="Allerup Gamle Have logo" style="max-width:160px; width:90%; height:auto;">
+        <img class="logo" src="https://allerupgamlehave.dk/static/aghcms/images/new_logo.png" alt="Allerup Gamle Have logo" style="max-width:160px; width:90%; height:auto;">
       </a>
+      <h1>Velkommen til Allerup Gamle Have</h1>
+      <p>Nyd naturen, friluftsbadet og de mange aktiviteter.</p>
     </div>
     <button class="hamburger" id="menuToggle" aria-label="Åbn menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
     <nav id="mainNav">
-      <a href="/">Forside</a>
+      <a href="index.html" class="active">Forside</a>
       <a href="Åbningstider.html">Åbningstider</a>
-      <a href="#">Faciliteter</a>
-      <a href="#">Udlejning</a>
-      <a href="#">Kontakt</a>
+      <a href="Faciliteter.html">Faciliteter</a>
+      <a href="Udlejning.html">Udlejning</a>
+      <a href="Kontakt.html">Kontakt</a>
     </nav>
     <div class="nav-overlay" id="navOverlay"></div>
   </header>
 
-  <!-- Hovedindhold, bevar ALT tekst og info -->
+  <!-- Hovedindhold -->
   <main>
     <section class="section card" style="margin-top:2rem;">
-      <h1>Allerup Gamle Have – Danmarks smukkeste friluftsbad</h1>
-      <p>Velkommen til Allerup Gamle Have – et unikt friluftsbad og naturskønt område for hele familien.</p>
-      <!-- Billedgalleri fra carousel bevares som statiske billeder -->
-      <div class="gallery" style="display:flex; gap:1rem; flex-wrap:wrap; justify-content:center; margin:2rem 0;">
-        <img src="assets/images/topphoto.png" alt="Allerup Gamle Have bassin" style="max-width:320px; width:100%; border-radius:8px;">
-        <img src="assets/images/topphoto2.png" alt="Panorama billede af Allerup Gamle Have" style="max-width:320px; width:100%; border-radius:8px;">
-        <img src="assets/images/topphoto3.png" alt="Allerup Gamle Have bassin" style="max-width:320px; width:100%; border-radius:8px;">
-      </div>
-      <p>Her på siden finder du alle oplysninger om åbningstider, faciliteter, udlejning og kontaktmuligheder.</p>
-      <p>Kontakt: <a href="mailto:lars@dannisgaard.dk">lars@dannisgaard.dk</a></p>
-      <p>Design & udvikling: Dannisgaard webdesign</p>
+      <h2>Friluftsbadet</h2>
+      <img src="https://allerupgamlehave.dk/media/filer_public_thumbnails/filer_public/56/33/563342e0-221e-4d9a-8a69-7c72f591966b/20190724_134027.jpg__400x247_q85_subsampling-2.jpg" alt="Friluftsbadet i Allerup">
+      <p>Friluftsbadet er hjertet i haven. Her kan du bade, slappe af og nyde sommeren på bedste vis.</p>
+    </section>
+
+    <section class="section card">
+      <h2>Historien</h2>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzA66sgW_-39H_yx2eq2rGYpLhdmFOkVNh7A&s" alt="Gammelt billede af Allerup Gamle Have">
+      <p>Haven har i generationer været et rekreativt åndehul for hele familien. Den gamle have er stadig et grønt samlingspunkt.</p>
     </section>
   </main>
 
-  <footer style="margin-top:2rem; background:var(--footer-bg); color:var(--footer-text); padding:2rem 0 1rem 0;">
+  <footer style="margin-top:2rem; background:var(--footer-bg); color:var(--footer-text); padding:2rem 0 1rem;">
     <div style="display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:2rem; max-width:900px; margin:0 auto;">
       <div style="flex:2; min-width:220px;">
         <div style="font-size:1.2em; font-weight:bold;">Allerup Gamle Have</div>
@@ -61,13 +60,12 @@
         <div style="margin-top:0.5rem;">Kontakt: <a href="mailto:lars@dannisgaard.dk" style="color:var(--accent);">lars@dannisgaard.dk</a></div>
       </div>
       <div style="flex:1; min-width:180px; text-align:center;">
-        <img src="https://allerupgamlehave.dk/static/aghcms/images/new_logo.png" alt="Nostalgisk logo" style="max-width:160px; width:80%; height:auto; margin:0 auto;">
+        <img src="https://allerupgamlehave.dk/static/aghcms/images/new_logo.png" alt="Allerup Gamle Have logo" style="max-width:160px; width:80%; height:auto; margin:0 auto;">
       </div>
     </div>
   </footer>
 
   <script>
-    // Hamburger menu script (samme som på de andre sider)
     const menuToggle = document.getElementById('menuToggle');
     const mainNav = document.getElementById('mainNav');
     const navOverlay = document.getElementById('navOverlay');
